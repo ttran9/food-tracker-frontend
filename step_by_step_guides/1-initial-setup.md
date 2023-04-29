@@ -60,18 +60,3 @@
 
 - command is below
 - touch src/{index.html,index.js}
-
-13. Create the main App component
-
-- touch src/components/App.js
-
-14. Hook up the redux store to our app.
-
-- mkdir -p src/redux/{slice,store}
-- touch src/redux/store/{index.js,storeDev.js,storeProd.js}
-- touch src/redux/slice/{index.js,auth.js}
-- touch src/service/auth.service.js
-
-# Notes.
-
-- I could use the Context API but I was worried about having many providers so instead I am using redux to help deal with having a global store with multiple slices instead of using the Context API and having multiple providers.
